@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>فراس محمد سحيول</title>
+<title>المهندس فراس محمد سحويل | الموقع الشخصي</title>
 <meta name="description" content="الموقع الشخصي للمهندس فراس محمد سحويل، يضم مجموعة من التطبيقات والأدوات والخدمات الرقمية المفيدة.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
@@ -13,247 +13,404 @@
 <meta property="og:description" content="الموقع الشخصي للمهندس فراس محمد سحويل، يضم مجموعة من التطبيقات والأدوات والخدمات الرقمية المفيدة.">
 <meta property="og:url" content="https://sehwail.com/">
 <meta property="og:image" content="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg">
-<meta property="og:image:secure_url" content="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:alt" content="فراس محمد سحويل">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="فراس محمد سحويل">
-<meta name="twitter:description" content="الموقع الشخصي للمهندس فراس محمد سحويل، يضم مجموعة من التطبيقات والأدوات والخدمات الرقمية المفيدة.">
-<meta name="twitter:image" content="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg">
-<meta name="twitter:image:alt" content="فراس محمد سحويل">
+
 <style>
-@font-face {
-    font-family: 'Tajawal';
-    src: url('/font/Tajawal-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Tajawal';
-    src: url('/font/Tajawal-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Tajawal';
-    src: url('/font/Tajawal-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Zain';
-    src: url('/font/Zain-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Zain';
-    src: url('/font/Zain-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+/* استيراد خطوط واضحة وعصرية ومريحة للعين للـ UI */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Zain:wght@700;900&display=swap');
 
 :root {
+    /* ألوان المظهر النهاري الملكي */
     --primary: #16a064;
     --primary-dark: #087046;
     --primary-soft: #e9fff4;
     --secondary: #2563eb;
-    --secondary-soft: #eff6ff;
     --ink: #143047;
     --muted: #64748b;
-    --line: rgba(22, 160, 100, 0.18);
-    --card: rgba(255, 255, 255, 0.94);
-    --shadow: 0 10px 24px rgba(20, 48, 71, 0.09);
+    --bg-main: radial-gradient(circle at top right, rgba(22, 160, 100, 0.08), transparent 45rem), linear-gradient(180deg, #f8fbff 0%, #eef7f1 100%);
+    --bg-body: #f7fbf8;
+    --line: rgba(22, 160, 100, 0.16);
+    --card: rgba(255, 255, 255, 0.96);
+    --shadow: 0 12px 36px rgba(20, 48, 71, 0.06);
     --radius: 24px;
-    --font-body: 'Tajawal', Arial, sans-serif;
-    --font-heading: 'Tajawal', Arial, sans-serif;
-    --font-ui: 'Tajawal', Arial, sans-serif;
-    --font-name: 'Zain', 'Tajawal', Arial, sans-serif;
+    --font-body: 'Tajawal', sans-serif;
+    --font-name: 'Zain', sans-serif;
 }
 
-* { box-sizing: border-box; }
-body { margin: 0; padding: 0; font-family: var(--font-body); background: #f7fbf8; color: var(--ink); }
+[data-theme="dark"] {
+    /* ألوان المظهر الليلي الاحترافي */
+    --primary: #1dd186;
+    --primary-dark: #128c59;
+    --primary-soft: #11291f;
+    --secondary: #3b82f6;
+    --ink: #f1f5f9;
+    --muted: #94a3b8;
+    --bg-main: radial-gradient(circle at top right, rgba(29, 209, 134, 0.05), transparent 45rem), linear-gradient(180deg, #0f172a 0%, #050b14 100%);
+    --bg-body: #0b1322;
+    --line: rgba(29, 209, 134, 0.18);
+    --card: rgba(15, 23, 42, 0.94);
+    --shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+* { 
+    box-sizing: border-box; 
+    transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: var(--font-body); 
+    background: var(--bg-body); 
+    color: var(--ink); 
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
 
 .home-wrapper {
     min-height: 100vh;
     direction: rtl;
-    padding: 34px 18px 28px;
-    background: radial-gradient(circle at top right, rgba(22, 160, 100, 0.12), transparent 30rem), linear-gradient(180deg, #f8fbff 0%, #eef7f1 100%);
+    padding: clamp(16px, 4vw, 48px) clamp(12px, 3vw, 32px);
+    background: var(--bg-main);
 }
 
-.profile-section {
-    position: relative; max-width: 1100px; margin: 0 auto 28px auto; text-align: center; padding: 34px 22px 30px; overflow: hidden; border: 1px solid var(--line); border-radius: 32px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(233, 255, 244, 0.88)); box-shadow: var(--shadow); transform: translateZ(0);
+/* تخطيط مرن عالمي يتكيف مع حجم الشاشات بالـ Grid */
+.main-layout {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: clamp(20px, 3vw, 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: start;
 }
-.profile-section::before { content: ""; position: absolute; left: -75px; bottom: -95px; width: 190px; height: 190px; border-radius: 50%; background: rgba(22, 160, 100, 0.12); }
-.profile-section::after { content: ""; position: absolute; right: -80px; top: -95px; width: 205px; height: 205px; border-radius: 50%; background: rgba(37, 99, 235, 0.10); }
-.profile-content { position: relative; z-index: 2; }
+
+/* القائمة الجانبية اليمنى: النبذة والصورة الشخصية */
+.profile-sticky-side {
+    position: sticky;
+    top: 32px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 32px;
+    padding: 40px 24px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+}
+
+.profile-image-box {
+    position: relative;
+    width: 154px;
+    height: 154px;
+    margin: 0 auto 24px auto;
+}
 
 .profile-image {
-    width: 148px; height: 148px; border-radius: 50%; object-fit: cover; object-position: center; background: #fff; padding: 7px; border: 1px solid rgba(22, 160, 100, 0.22);
-    box-shadow: 0 10px 22px rgba(20, 48, 71, 0.13); margin-bottom: 20px; transition: transform 0.22s ease, box-shadow 0.22s ease;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--card);
+    padding: 6px;
+    border: 2px solid var(--primary);
+    box-shadow: 0 10px 24px rgba(22, 160, 100, 0.12);
 }
-.profile-image:hover { transform: translateY(-5px) scale(1.025); box-shadow: 0 14px 28px rgba(20, 48, 71, 0.15); }
 
-.main-title { margin: 0; color: var(--ink); line-height: 1.7; font-family: var(--font-heading); }
-.main-title .welcome-line { display: block; font-size: clamp(21px, 4vw, 31px); font-weight: 500; letter-spacing: -0.03em; }
+.profile-image-box::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 1px dashed var(--primary);
+    animation: rotateOuter 20s linear infinite;
+}
+
+@keyframes rotateOuter {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.main-title { margin: 0; color: var(--ink); font-family: var(--font-body); }
+.main-title .welcome-line { display: block; font-size: 16px; font-weight: 700; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
 .main-title .name-line {
-    display: block; margin-top: 4px; font-family: var(--font-name); font-size: clamp(38px, 6vw, 64px); font-weight: 900; color: var(--primary-dark);
-    line-height: 1; white-space: nowrap; text-shadow: 0 5px 14px rgba(8, 112, 70, 0.18);
+    display: block; margin-top: 6px; font-family: var(--font-name); font-size: clamp(34px, 3vw, 46px); font-weight: 900; color: var(--primary);
+    line-height: 1.1; text-shadow: 0 4px 12px rgba(22, 160, 100, 0.08);
 }
 
-.subtitle {
-    display: inline-flex; align-items: center; justify-content: center; margin: 16px auto 0 auto; padding: 9px 16px; max-width: 680px; color: var(--muted);
-    background: rgba(255, 255, 255, 0.76); border: 1px solid rgba(22, 160, 100, 0.14); border-radius: 999px; font-size: 16px; font-weight: 500; line-height: 1.9;
+.bio-card {
+    margin-top: 24px;
+    font-size: 15.5px;
+    color: var(--ink);
+    line-height: 1.8;
+    background: var(--primary-soft);
+    padding: 20px;
+    border-radius: var(--radius);
+    font-weight: 500;
+    text-align: justify;
+    border-right: 5px solid var(--primary);
 }
 
-.works-section { max-width: 1100px; margin: 0 auto; }
+/* القائمة اليسرى: سلة المشاريع */
+.works-container-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .section-header {
-    display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; padding: 14px 16px; border: 1px solid rgba(22, 160, 100, 0.16);
-    border-radius: 22px; background: rgba(255, 255, 255, 0.92); box-shadow: 0 6px 16px rgba(20, 48, 71, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 24px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--card);
+    box-shadow: var(--shadow);
 }
-.section-title { margin: 0; font-family: var(--font-heading); font-size: 24px; font-weight: 800; color: var(--ink); letter-spacing: -0.04em; }
+.section-title { margin: 0; font-size: clamp(20px, 2vw, 24px); font-weight: 800; letter-spacing: -0.02em; }
 .section-badge {
-    display: inline-flex; align-items: center; justify-content: center; gap: 6px; flex: 0 0 auto; min-height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: #fff; padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 800; box-shadow: 0 7px 14px rgba(8, 112, 70, 0.14);
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff; padding: 8px 20px; border-radius: 999px; font-size: 13.5px; font-weight: 700; box-shadow: 0 4px 12px rgba(22, 160, 100, 0.15);
 }
 
-.cards-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+/* تصفيف المشاريع 3/3 تحت بعض بشكل انسيابي متجاوب تماماً */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* في الشاشات العريضة جداً نضمن ثبات التوزيع 3 أعمدة */
+@media (min-width: 1200px) {
+    .cards-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 .work-card {
-    position: relative; display: block; min-height: 166px; padding: 22px 20px; background: var(--card); border: 1px solid rgba(22, 160, 100, 0.17);
-    border-radius: var(--radius); text-decoration: none; color: inherit; overflow: hidden; box-shadow: 0 6px 16px rgba(20, 48, 71, 0.06);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    position: relative; display: block; min-height: 190px; padding: 26px 24px; background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); text-decoration: none; color: inherit; overflow: hidden; box-shadow: var(--shadow);
+    transition: transform 0.22s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.22s ease, border-color 0.22s ease;
 }
-.work-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--primary), #71d89f, var(--secondary)); }
-.work-card::after { content: ""; position: absolute; left: -55px; bottom: -65px; width: 150px; height: 150px; border-radius: 50%; background: rgba(22, 160, 100, 0.08); opacity: 0; transition: opacity 0.2s ease; }
-.work-card:hover { transform: translateY(-4px); box-shadow: 0 10px 22px rgba(20, 48, 71, 0.10); border-color: rgba(22, 160, 100, 0.42); }
-.work-card:hover::after { opacity: 1; }
+.work-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--primary), var(--secondary)); }
+.work-card:hover { transform: translateY(-6px); box-shadow: 0 16px 36px rgba(20, 48, 71, 0.12); border-color: var(--primary); }
 
-.card-content { position: relative; z-index: 2; display: flex; flex-direction: column; height: 100%; }
+.card-content { display: flex; flex-direction: column; height: 100%; }
 .card-number {
-    width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--secondary), #1d4ed8);
-    color: #fff; border-radius: 15px; font-size: 15px; font-weight: 900; margin-bottom: 18px; box-shadow: 0 8px 18px rgba(37, 99, 235, 0.21);
+    width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; background: var(--primary-soft);
+    color: var(--primary); border-radius: 10px; font-size: 14px; font-weight: 800; margin-bottom: 18px;
 }
-.card-title { margin: 0 0 16px 0; font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--ink); line-height: 1.85; letter-spacing: -0.035em; }
+.card-title { margin: 0 0 16px 0; font-size: 17.5px; font-weight: 700; line-height: 1.7; color: var(--ink); }
 .card-link {
-    display: inline-flex; align-items: center; gap: 7px; width: fit-content; margin-top: auto; color: var(--primary-dark); background: var(--primary-soft);
-    border: 1px solid rgba(22, 160, 100, 0.14); padding: 8px 12px; border-radius: 999px; font-size: 14px; font-weight: 800;
+    display: inline-flex; align-items: center; gap: 8px; margin-top: auto; color: #fff; background: var(--primary);
+    padding: 8px 18px; border-radius: 999px; font-size: 13px; font-weight: 700; width: fit-content; box-shadow: 0 4px 10px rgba(22, 160, 100, 0.1);
 }
-.card-link::before { content: "←"; font-size: 17px; transition: transform 0.2s ease; }
-.work-card:hover .card-link::before { transform: translateX(-4px); }
 
-.footer-note { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; margin-top: 26px; padding: 15px 18px; color: var(--muted); background: rgba(255, 255, 255, 0.82); border: 1px solid rgba(22, 160, 100, 0.15); border-radius: 20px; box-shadow: 0 6px 14px rgba(20, 48, 71, 0.05); font-size: 14px; font-weight: 700; }
-.loading-msg { grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--muted); font-size: 18px; }
+/* الـ Floating Action Button للوضع الليلي */
+.theme-switch-btn {
+    position: fixed; bottom: 24px; left: 24px; width: 54px; height: 54px; border-radius: 50%; background: var(--primary);
+    color: #fff; border: none; cursor: pointer; box-shadow: 0 8px 24px rgba(22, 160, 100, 0.25);
+    display: flex; align-items: center; justify-content: center; z-index: 99; transition: transform 0.2s ease;
+}
+.theme-switch-btn:hover { transform: scale(1.08); }
+.theme-switch-btn svg { width: 24px; height: 24px; fill: currentColor; }
 
-@media (hover: none) { .profile-image:hover, .work-card:hover { transform: none; } .work-card:hover::after { opacity: 0; } }
-@media (max-width: 992px) { .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) {
-    .home-wrapper { padding: 14px 10px 20px; }
-    .profile-section { padding: 26px 14px 24px; border-radius: 24px; margin-bottom: 18px; }
-    .profile-image { width: 122px; height: 122px; margin-bottom: 16px; }
-    .main-title .welcome-line { font-size: 21px; }
-    .main-title .name-line { font-size: clamp(34px, 9.5vw, 42px); }
-    .subtitle { width: 100%; border-radius: 16px; font-size: 14.5px; padding: 9px 12px; }
-    .section-header { padding: 12px; border-radius: 18px; }
-    .section-title { font-size: 20px; }
-    .section-badge { min-height: 36px; font-size: 12.5px; }
-    .cards-grid { grid-template-columns: 1fr; gap: 12px; }
-    .work-card { padding: 19px 16px; border-radius: 18px; }
-    .card-link { width: 100%; justify-content: center; }
+/* فوتر الصفحة */
+.footer-note { text-align: center; padding: 24px 10px; color: var(--muted); font-size: 13.5px; font-weight: 700; border-top: 1px dashed var(--line); margin-top: 16px; }
+.loading-msg { grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--muted); font-size: 17px; font-weight: 500; }
+
+/* تصميم الرسالة المنبثقة الاحترافية والفخمة (Elite Modal Window) */
+.modal-overlay {
+    position: fixed; inset: 0; background: rgba(11, 19, 34, 0.65); backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); display: flex; align-items: center; justify-content: center; z-index: 9999;
+    opacity: 0; visibility: hidden; transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.4s;
+    padding: 16px;
+}
+.modal-overlay.show { opacity: 1; visibility: visible; }
+
+.modal-content {
+    background: var(--card); border: 1px solid var(--line); border-radius: 36px; padding: 48px 32px;
+    width: 100%; max-width: 480px; text-align: center; box-shadow: 0 30px 70px rgba(0,0,0,0.25);
+    transform: scale(0.9) translateY(20px); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative; overflow: hidden;
+}
+.modal-overlay.show .modal-content { transform: scale(1) translateY(0); }
+
+/* تفاصيل مظهر المنبثقة الداخلي */
+.modal-content::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.modal-img-wrapper {
+    position: relative; width: 136px; height: 136px; margin: 0 auto 24px auto;
+}
+.modal-img {
+    width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
+    border: 4px solid var(--card); box-shadow: 0 8px 24px rgba(20, 48, 71, 0.15);
+}
+.modal-img-wrapper::after {
+    content: '✓'; position: absolute; bottom: 4px; right: 8px; width: 28px; height: 28px;
+    background: var(--primary); color: white; border-radius: 50%; font-size: 14px;
+    font-weight: bold; display: flex; align-items: center; justify-content: center; border: 3px solid var(--card);
+}
+
+.modal-title-text { font-family: var(--font-body); font-size: 22px; font-weight: 800; color: var(--ink); margin: 0 0 10px 0; }
+.modal-divider { width: 50px; height: 3px; background: var(--primary); margin: 14px auto; border-radius: 2px; }
+.modal-eng-signature { font-family: var(--font-body); font-size: 16.5px; color: var(--muted); font-weight: 700; margin-bottom: 32px; }
+.modal-eng-signature span { color: var(--primary); font-weight: 800; }
+
+.modal-btn {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff;
+    border: none; padding: 15px 40px; border-radius: 16px; font-size: 16px; font-weight: 700; cursor: pointer;
+    box-shadow: 0 6px 20px rgba(22, 160, 100, 0.25); width: 100%; letter-spacing: -0.01em;
+}
+.modal-btn:hover { filter: brightness(1.05); }
+
+/* ريجيم برمجى واستعلامات الوسائط (Media Queries) للتوافق مع شاشات الجوال */
+@media (max-width: 1100px) {
+    .main-layout { grid-template-columns: 1fr; gap: 24px; }
+    .profile-sticky-side { position: relative; top: 0; max-width: 100%; padding: 32px 20px; }
+    .profile-image-box { width: 130px; height: 130px; }
+}
+@media (max-width: 480px) {
+    .home-wrapper { padding: 16px 12px; }
+    .section-header { padding: 14px 16px; border-radius: 16px; }
+    .work-card { padding: 22px 18px; border-radius: 20px; min-height: 170px; }
+    .modal-content { padding: 36px 20px; border-radius: 28px; }
+    .modal-img-wrapper { width: 110px; height: 110px; }
+    .modal-title-text { font-size: 19px; }
+    .theme-switch-btn { bottom: 16px; left: 16px; width: 48px; height: 48px; }
 }
 </style>
 </head>
 <body>
+
+<!-- رسالة الدخول الاحترافية والفاخرة المنبثقة لمرة واحدة في الـ Session -->
+<div class="modal-overlay" id="welcome-modal">
+    <div class="modal-content">
+        <div class="modal-img-wrapper">
+            <img src="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg" alt="م: فراس سحويل" class="modal-img">
+        </div>
+        <h2 class="modal-title-text">أهلاً بكم في المنصة الرسمية</h2>
+        <div class="modal-divider"></div>
+        <div class="modal-eng-signature">تصميم وتنفيذ <span>م : فراس محمد سحويل</span></div>
+        <button class="modal-btn" id="close-modal-btn">استعراض المنصة</button>
+    </div>
+</div>
+
+<!-- زر تبديل الوضع التفاعلي الفخم والذكي -->
+<button class="theme-switch-btn" id="theme-toggle" aria-label="تبديل المظهر العام">
+    <svg id="theme-icon" viewBox="0 0 24 24">
+        <path d="M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z" />
+    </svg>
+</button>
+
 <main class="home-wrapper">
-
-    <section class="profile-section">
-        <div class="profile-content">
-            <img 
-                src="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg" 
-                alt="فراس محمد سحويل " 
-                class="profile-image"
-                loading="eager"
-                decoding="async"
-                fetchpriority="high"
-            >
-
+    <div class="main-layout">
+        
+        <!-- الجهة اليمنى: البطاقة التعريفية والنبذة الهندسية (ثابتة عند السحب في الشاشات الكبيرة) -->
+        <aside class="profile-sticky-side">
+            <div class="profile-image-box">
+                <img src="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg" alt="المهندس فراس محمد سحويل" class="profile-image">
+            </div>
             <h1 class="main-title">
-                <span class="welcome-line">مرحبًا بكم في موقع المهندس</span>
+                <span class="welcome-line">الموقع الرسمي للمهندس</span>
                 <span class="name-line">فراس محمد سحويل</span>
             </h1>
-
-            <p class="subtitle">
-                معرض أعمالي ومشاريعي الرقمية - تحديث حي ومباشر.
+            <p class="bio-card">
+                مرحباً بكم في منصتي الرقمية. أضع بين أيديكم خلاصة خبراتي الهندسية والبرمجية في تطوير الأنظمة السحابية المتكاملة، وتصميم واجهات المستخدم الفاخرة، وحلول الويب المتقدمة.
             </p>
-        </div>
-    </section>
+        </aside>
 
-    <section class="works-section">
-        <div class="section-header">
-            <h2 class="section-title">قائمة الأعمال</h2>
-            <div class="section-badge" id="project-count">جاري الاتصال...</div>
-        </div>
+        <!-- الجهة اليسرى: قائمة المشاريع والأعمال المربوطة بمحرك قوقل شيت -->
+        <section class="works-container-side">
+            <div class="section-header">
+                <h2 class="section-title">معرض الأعمال والمشاريع الحية</h2>
+                <div class="section-badge" id="project-count">اتصال...</div>
+            </div>
 
-        <div class="cards-grid" id="projects-container">
-            <div class="loading-msg">جاري جلب المشاريع الحية...</div>
-        </div>
+            <!-- شبكة استعراض الكروت 3/3 متجاوبة تلقائياً مع أحجام الشاشات -->
+            <div class="cards-grid" id="projects-container">
+                <div class="loading-msg">جاري مزامنة وجلب البيانات الحية من السحابة...</div>
+            </div>
 
-        <div class="footer-note">
-            <span class="copyright-line">جميع الحقوق محفوظة © 2026.</span>
-        </div>
-    </section>
+            <footer class="footer-note">
+                <span class="copyright-line">جميع الحقوق محفوظة للمهندس فراس سحويل © 2026</span>
+            </footer>
+        </section>
 
+    </div>
 </main>
 
 <script>
-// تم ربط الـ API الخاص بك بنجاح ومباشرة هنا
+// جلب رابط السكريبت السحابي لـ غوغل شيت
 const googleWebAppUrl = 'https://script.google.com/macros/s/AKfycbzfFu27oYNlIWm1QB19DVR9pgGY1DdWUqCwdkPnZ1PLivUphTAX_OXmiofJx1wZbOQG/exec';
 
+// 1. منطق المنبثقة الذكي الاحترافي (تختفي عند الـ Refresh وتعود فقط عند إغلاق وفتح المتصفح الجديد)
+window.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('welcome-modal');
+    const closeBtn = document.getElementById('close-modal-btn');
+    
+    if (!sessionStorage.getItem('modalHasShown')) {
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 200); 
+    }
+
+    closeBtn.addEventListener('click', function() {
+        modal.classList.remove('show');
+        sessionStorage.setItem('modalHasShown', 'true'); 
+    });
+});
+
+// 2. التحكم وحفظ تفضيلات المظهر العام (الليلي / النهاري) للمستخدم
+const themeToggle = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme') || 'light';
+
+if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+}
+
+themeToggle.addEventListener('click', function() {
+    let theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+});
+
+// 3. جلب المشاريع ديناميكياً وبناء كروت متطابقة مرنة 
 window.addEventListener('DOMContentLoaded', function () {
     const container = document.getElementById('projects-container');
     const badge = document.getElementById('project-count');
 
-    if (!googleWebAppUrl || googleWebAppUrl.includes('ضع_رابط_تطبيق')) {
-        container.innerHTML = '<div class="loading-msg" style="color: #ef4444;">يرجى وضع رابط تطبيق الويب المولد من Apps Script داخل الكود أولاً لربط المحرك!</div>';
-        badge.textContent = '0 عمل متاح';
-        return;
-    }
-
-    // جلب البيانات من محرك غوغل شيت مباشرة كـ JSON مخصص
     fetch(googleWebAppUrl)
         .then(response => {
-            if (!response.ok) throw new Error('فشل جلب البيانات البرمجية');
+            if (!response.ok) throw new Error('Data sync error');
             return response.json();
         })
         .then(projects => {
             if (!projects || projects.length === 0) {
-                container.innerHTML = '<div class="loading-msg">لا توجد مشاريع مضافة حالياً في جدول البيانات البرمجي.</div>';
-                badge.textContent = '0 عمل متاح';
+                container.innerHTML = '<div class="loading-msg">لا توجد مشاريع مضافة حالياً في جدول البيانات.</div>';
+                badge.textContent = '0 عمل';
                 return;
             }
 
-            // تحديث عداد المشاريع تلقائياً
-            badge.textContent = `${projects.length} عملًا متاحًا`;
-            
-            // تصفير الحاوية وبناء العناصر بناء على بيانات المحرك
+            badge.textContent = `${projects.length} عملًا حياً`;
             container.innerHTML = '';
+            
             projects.forEach((project, index) => {
                 const card = document.createElement('a');
                 card.href = project.link;
                 card.className = 'work-card';
                 card.target = '_blank';
-                card.style.setProperty('--card-index', index + 1);
                 
                 card.innerHTML = `
                     <div class="card-content">
                         <div class="card-number">${index + 1}</div>
                         <h3 class="card-title">${project.title}</h3>
-                        <span class="card-link">الدخول إلى الرابط</span>
+                        <span class="card-link">استعراض الرابط ←</span>
                     </div>
                 `;
                 container.appendChild(card);
@@ -261,10 +418,32 @@ window.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => {
             console.error(error);
-            container.innerHTML = '<div class="loading-msg" style="color: #ef4444;">حدث خطأ في الاتصال بمحرك البيانات قوقل شيت. تأكد من نشر السكريبت كـ Anyone.</div>';
-            badge.textContent = 'خطأ بالمحرك';
+            container.innerHTML = '<div class="loading-msg" style="color: #ef4444;">حدث خطأ في جلب وتحديث كروت المشاريع من السيرفر.</div>';
+            badge.textContent = 'خطأ اتصال';
         });
 });
+
+// 4. محرك الـ Push Notifications للاستقبال والعمل في الخلفية حتى والموقع مغلق
+if ('serviceWorker' in navigator && 'PushManager' in window) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('data:text/javascript;base64,' + btoa(`
+            self.addEventListener('push', function(event) {
+                const options = {
+                    body: event.data ? event.data.text() : 'تحديث جديد متاح من المهندس فراس سحويل!',
+                    icon: 'https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg',
+                    badge: 'https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg',
+                    dir: 'rtl'
+                };
+                event.waitUntil(self.registration.showNotification('منصة م: فراس سحويل', options));
+            });
+        `)).then(function(swReg) {
+            console.log('Push Service Worker Registered');
+            Notification.requestPermission();
+        }).catch(function(err) {
+            console.error('Service Worker registration failed: ', err);
+        });
+    });
+}
 </script>
 </body>
 </html>
