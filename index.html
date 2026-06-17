@@ -252,7 +252,9 @@ body {
     font-weight: bold; display: flex; align-items: center; justify-content: center; border: 3px solid var(--card);
 }
 
-.modal-title-text { font-family: var(--font-body); font-size: 22px; font-weight: 800; color: var(--ink); margin: 0 0 10px 0; }
+.modal-icon { font-size: 32px; margin-bottom: 12px; }
+.modal-title-text { font-family: var(--font-body); font-size: 22px; font-weight: 800; color: var(--ink); margin: 0 0 14px 0; }
+.modal-description { font-size: 15px; color: var(--ink); line-height: 1.7; text-align: justify; margin: 0 0 20px 0; font-weight: 500; }
 .modal-divider { width: 50px; height: 3px; background: var(--primary); margin: 14px auto; border-radius: 2px; }
 .modal-eng-signature { font-family: var(--font-body); font-size: 16.5px; color: var(--muted); font-weight: 700; margin-bottom: 32px; }
 .modal-eng-signature span { color: var(--primary); font-weight: 800; }
@@ -283,36 +285,34 @@ body {
 </head>
 <body>
 
-<!-- رسالة الدخول الاحترافية والفاخرة المنبثقة لمرة واحدة في الـ Session -->
 <div class="modal-overlay" id="welcome-modal">
     <div class="modal-content">
         <div class="modal-img-wrapper">
             <img src="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg" alt="م: فراس سحويل" class="modal-img">
         </div>
-       <div class="modal-content">
-    <div class="modal-icon">✨</div>
+        <div class="modal-icon">✨</div>
 
-    <h2 class="modal-title-text">أهلاً بكم في المنصة الرسمية</h2>
+        <h2 class="modal-title-text">أهلاً بكم في المنصة الرسمية</h2>
 
-    <p class="modal-description">
-        هنا، لا نكتفي ببناء الأنظمة أو تصميم الواجهات، بل نصنع تجارب رقمية متكاملة.
-        نجمع بين دقة الهندسة، وذكاء البرمجة، ولمسة التصميم الإبداعي لتحويل
-        الأفكار الطموحة إلى حلول تقنية متقدمة تعمل بكفاءة وتترك أثراً مميزاً.
-        رؤيتنا واضحة... والابتكار هو طريقنا نحو المستقبل.
-    </p>
+        <p class="modal-description">
+            هنا، لا نكتفي ببناء الأنظمة أو تصميم الواجهات، بل نصنع تجارب رقمية متكاملة.
+            نجمع بين دقة الهندسة، وذكاء البرمجة، ولمسة التصميم الإبداعي لتحويل
+            الأفكار الطموحة إلى حلول تقنية متقدمة تعمل بكفاءة وتترك أثراً مميزاً.
+            رؤيتنا واضحة... والابتكار هو طريقنا نحو المستقبل.
+        </p>
 
-    <div class="modal-divider"></div>
+        <div class="modal-divider"></div>
 
-    <div class="modal-eng-signature">
-        تصميم وتنفيذ <span>م : فراس محمد سحويل</span>
+        <div class="modal-eng-signature">
+            تصميم وتنفيذ <span>م : فراس محمد سحويل</span>
+        </div>
+
+        <button class="modal-btn" id="close-modal-btn">
+            استعراض المنصة
+        </button>
     </div>
-
-    <button class="modal-btn" id="close-modal-btn">
-        استعراض المنصة
-    </button>
 </div>
 
-<!-- زر تبديل الوضع التفاعلي الفخم والذكي -->
 <button class="theme-switch-btn" id="theme-toggle" aria-label="تبديل المظهر العام">
     <svg id="theme-icon" viewBox="0 0 24 24">
         <path d="M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z" />
@@ -322,7 +322,6 @@ body {
 <main class="home-wrapper">
     <div class="main-layout">
         
-        <!-- الجهة اليمنى: البطاقة التعريفية والنبذة الهندسية (ثابتة عند السحب في الشاشات الكبيرة) -->
         <aside class="profile-sticky-side">
             <div class="profile-image-box">
                 <img src="https://i.postimg.cc/Gmq96y4R/347590685-273239908641467-8867587916477147235-n.jpg" alt="المهندس فراس محمد سحويل" class="profile-image">
@@ -336,14 +335,12 @@ body {
             </p>
         </aside>
 
-        <!-- الجهة اليسرى: قائمة المشاريع والأعمال المربوطة بمحرك قوقل شيت -->
         <section class="works-container-side">
             <div class="section-header">
                 <h2 class="section-title">معرض الأعمال والمشاريع الحية</h2>
                 <div class="section-badge" id="project-count">اتصال...</div>
             </div>
 
-            <!-- شبكة استعراض الكروت 3/3 متجاوبة تلقائياً مع أحجام الشاشات -->
             <div class="cards-grid" id="projects-container">
                 <div class="loading-msg">جاري مزامنة وجلب البيانات الحية من السحابة...</div>
             </div>
